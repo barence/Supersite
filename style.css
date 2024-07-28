@@ -1,4 +1,9 @@
 body {
     font-family:Helvetica;
     font-size: 2em;
+    background-color: rgb(177, 177, 177);
 }
+img {
+    width: 7%;
+    height: auto;
+  }
