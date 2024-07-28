@@ -1,9 +1,10 @@
 body {
     font-family:Helvetica;
-    font-size: 2em;
-    background-color: rgb(194, 211, 231);
+    font-size: 5em;
+    color: aliceblue;
+    background-color: rgb(42, 46, 50);
 }
 img {
-    width: 7%;
+    width: 5%;
     height: auto;
   }
