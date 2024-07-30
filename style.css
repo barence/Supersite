@@ -1,10 +1,85 @@
-body {
-    font-family:Helvetica;
-    font-size: 5em;
-    color: aliceblue;
-    background-color: rgb(42, 46, 50);
+header{
+    background-color: rgb(72, 82, 89);
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
 }
+.title {
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    padding-top: 11px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font-size: 1em;
+    color: rgb(237, 237, 237);
+    background-color: rgb(166, 172, 189);
+}
+
+.container{
+width: 80%;
+margin: 0 auto;
+}
+
 img {
     width: 5%;
     height: auto;
-  }
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 150px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover {
+color: chocolate;
+}
+
+nav a::before {
+        content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
