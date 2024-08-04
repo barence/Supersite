@@ -4,9 +4,6 @@
 
 header{
     background-color: rgb(72, 82, 89);
-    margin-top: -8px;
-    margin-right: -8px;
-    margin-left: -8px;
 }
 
 .title {
@@ -15,7 +12,7 @@ header{
     font-size: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
-    padding-top: 11px;
+    padding-top: 13px;
     position: relative;
 }
 
@@ -29,6 +26,9 @@ body {
     font-size: 1em;
     color: rgb(237, 237, 237);
     background-color: rgb(166, 172, 189);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0%;
 }
 
 .container{
@@ -36,8 +36,9 @@ width: 80%;
 margin: 0 auto;
 }
 .fullscreen{
-    width: 100.8%;
-    height: 50%;
+    width: 206vh;
+    height: 100vh;
+    object-fit: cover;
 }
 img {
     width: 5%;
@@ -61,7 +62,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 11px;
     padding-top: 25px;
     position: relative;
 }
@@ -91,3 +92,4 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
 }
+
