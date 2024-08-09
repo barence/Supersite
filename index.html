@@ -10,40 +10,25 @@
 </head>
 <header>
     <div class="container" id="navbar">
-        <a href="index.html"><img src="SupersiteLogo.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="supersiteLogo.png" alt="logo" class="logo"></a>
         <a href="index.html" class="title">Kale Sites</a>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Periodic Table</a></li>
+                <li><a href="dashboard.html">Physics</a></li>
+                <li><a href="periodicTable.html">Periodic Table</a></li>
                 <li><a href="chess.html">Chess</a></li>
                 <li><a href="#">Space</a></li>
             </ul>
         </nav>
     </div>
 <body>
-    <img id="hidden" src="hide.png" class="fullscreen">
+    <a id="dashboard" href="dashboard.html"></a>
     <script>
-        const hidden = document.getElementById("hidden");
-        const navbar = document.getElementById("navbar");
-        hidden.style.display = "none";
         document.addEventListener("keydown", e => {
-    if (e.key.toLowerCase() === "q" 
-        && e.ctrlKey) {
-        if (hidden.style.display === "none"){
-            hidden.style.display = "block";
-        }
-        else{
-            hidden.style.display = "none";
-        }
-        if (navbar.style.display === "none"){
-            navbar.style.display = "block";
-        }
-        else{
-            navbar.style.display = "none";
-        }
+    if (e.key.toLowerCase() === "]") {
+            document.getElementById("dashboard").click()
     }
-}); 
+    }); 
     </script>
 </body>
 </html>
