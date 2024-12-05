@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.board {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+
+    background-color: rgb(124, 112, 144);
+}
+
+#taskForm {
+    padding: 32px 32px 0;
+}
+
+#taskForm input {
+    padding: 12px;
+    margin-right: 12px;
+    width: 225px;
+
+    border-radius: 8px;
+    border: none;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: white;
+
+    font-size: 14px;
+    outline: none;
+}
+
+#taskForm button {
+    padding: 12px 32px;
+
+    border-radius: 8px;
+    border: none;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: white;
+    columns: black;
+
+    font-weight: bold;
+    font-size: 14px;
+    outline: pointer;
+}  
+
+/* BOARD */
+.lanes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+
+    padding: 24px 32px;
+
+    overflow: scroll;
+    height: 100%;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.swimLane {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+
+    padding: 12px;
+    border-radius: 8px;
+    width: 250px;
+    min-height: 90px;
+
+    flex-shrink: 0;
+}
+
+.task {
+    background: white;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.isDragging {
+    scale: 0.95;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    color: rgb(0, 0, 0);
+}
+.dead {
+    animation: scaleAnimation 0.8s infinite alternate;
+    
+}
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

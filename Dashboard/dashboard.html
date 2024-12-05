@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="drag.js" defer></script>
+    <script src="task.js" defer></script>
+    <script src="complete.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="taskForm">
+            <input type="text" placeholder="new task..." id="taskInput"/>
+            <button type="submit">Add +</button>
+        </form>
+        <div class="lanes">
+            <div class="swimLane"  id="chemLane">
+                <h3 class="heading">Chemistry</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="physLane">
+                <h3 class="heading">Physics</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="calcLane">
+                <h3 class="heading">Calculus</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="worldLane">
+                <h3 class="heading">World History</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="engLane">
+                <h3 class="heading">English</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="flightLane">
+                <h3 class="heading">Flight</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+            <div class="swimLane"  id="yearLane">
+                <h3 class="heading">Yearbook</h3>
+                <p class="task" draggable="true">Quantum Packet</p>
+                <p class="task" draggable="true">Quantum Notes</p>
+                <p class="task" draggable="true">Retake Equilibrium Test</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

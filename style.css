@@ -9,11 +9,16 @@ header{
 .title {
     color: rgb(237, 237, 237);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 300%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
-    padding-top: 13px;
+    padding: 0.666666%;
     position: relative;
+}
+
+.title:hover {
+    transform: scale(1.1);
+    font-weight: bold;
 }
 
 header::after {
@@ -37,13 +42,12 @@ margin: 0 auto;
 }
 
 img {
-    width: 5%;
+    width: 6%;
     height: auto;
 }
-
 .logo {
     float: left;
-    padding: 10px;
+    padding: 0.5%;
 }
 
 nav{
@@ -58,8 +62,9 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 110px;
-    padding-top: 25px;
+    padding-top: 3.5%;
+    margin-right: 10vh;
+    text-align: center ;
     position: relative;
 }
 
